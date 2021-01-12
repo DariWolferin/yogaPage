@@ -100,7 +100,6 @@ setTimeout(() => {
 
 const itemSitemap = document.querySelectorAll('.accordeon');
 const itemSitemapBlock = document.querySelector('.accordeon__block');
-console.log(itemSitemap)
 
 	for(item of itemSitemap){
 		item.addEventListener('click', function(){
