@@ -221,7 +221,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   padding: 195px 0 175px 0;
-  background: url("../img/woman2.png") center/cover no-repeat; }
+  background: url("../img/woman2.webp") center/cover no-repeat; }
   .program__container {
     overflow: hidden;
     padding-bottom: 40px; }
@@ -404,7 +404,7 @@ body {
   left: 0; }
 
 .join {
-  background: url("../img/woman4-bg.png") center/cover no-repeat;
+  background: url("../img/woman4-bg.webp") center/cover no-repeat;
   min-height: 100%;
   padding: 145px 0 145px 0; }
   .join__body {
