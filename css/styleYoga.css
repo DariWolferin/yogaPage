@@ -614,6 +614,38 @@ body {
     width: 560px;
     height: 315px; }
 
+	.youtube {
+    background: 4% 49%; 
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+}
+.youtube .play {
+    background: url('../img/youtube-play-btn.png') no-repeat; /*ВАЖНО: здесь укажите адрес до изображения*/
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.youtube:hover .play {
+    background-position: 0 0;
+}
+
+iframe{
+	width: 560px;
+	height: 315px;
+}
+
 .item-video {
   -webkit-transform: translate(120%, 0);
   -ms-transform: translate(120%, 0);
@@ -850,7 +882,15 @@ body {
     -webkit-box-shadow: 13px 15px 10px 0px rgba(11, 12, 12, 0.58);
     box-shadow: 13px 15px 10px 0px rgba(11, 12, 12, 0.58);
     width: 480px;
-    height: 275px; } }
+    height: 275px; } 
+    iframe{
+	width: 480px;
+	height: 275px;
+   }
+    .youtube{
+	background: 4% 34%;
+  }
+}
 
 @media (max-width: 1100px) {
   .contacts p {
@@ -930,7 +970,6 @@ body {
       width: 100%;
       background: #484f5b;
       height: 2px;
-      /*добавляеи им плавности при переходе от полочек к крестику*/
       -webkit-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s; }
@@ -946,14 +985,9 @@ body {
     width: 67px; }
   .header__body {
     position: fixed;
-    /*Сделали 100% вместо нуля уже в конце, чтобы меню уехало вверх и спускалось только
-когда его вызовут*/
     top: -100%;
     left: 0;
-    /*Добавляем это уже в конце, чтобы в если человек перевернёт телефон горизонтально
-и меню не будет влезать у него была возможность проскролить*/
     overflow: auto;
-    /*Чтобы при active оно плавно выезжало сверху*/
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
@@ -962,9 +996,6 @@ body {
     background: #e6c8c3;
     padding: 100px 0 0 0; }
     .header__body._active {
-      /*т.е. благодаря top 100% у header__menu оно скрыто, но когда мы нажимаем
-		на крестик оно переходит в active в котором у него топ 0, те оно опускается
-		и становится на весь экран как было*/
       top: 0; }
   .header__list {
     -webkit-box-orient: vertical;
@@ -1253,7 +1284,15 @@ body {
       padding: 21px 5px 10px 5px; }
   .video__media {
     width: 351px;
-    height: 175px; } }
+    height: 175px; }
+    iframe{
+	width: 351px;
+	height: 175px;
+  }
+  .youtube{
+	background: 77% 42%;
+    }
+}
 
 @media (max-width: 400px) {
   .contacts__form input {
