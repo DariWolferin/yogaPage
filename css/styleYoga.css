@@ -623,7 +623,7 @@ body {
     cursor: pointer;
 }
 .youtube .play {
-    background: url('../img/youtube-play-btn.png') no-repeat; /*ВАЖНО: здесь укажите адрес до изображения*/
+    background: url('../img/youtube-play-btn.webp') no-repeat; /*ВАЖНО: здесь укажите адрес до изображения*/
     background-position: 0 -50px;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
