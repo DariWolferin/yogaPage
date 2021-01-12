@@ -1,4 +1,4 @@
-'use strict';
+
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 r(function(){
     if (!document.getElementsByClassName) {
